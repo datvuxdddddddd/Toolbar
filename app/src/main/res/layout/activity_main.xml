@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:orientation="horizontal">
+
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">>
+
+                <ImageButton
+                    android:id="@+id/btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_background"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_heart_black_18dp" />
+
+                <TextView
+                    android:id="@+id/txt_btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="button"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">>
+
+                <ImageButton
+                    android:id="@+id/btn2"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_background"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_adb_black_24dp" />
+
+                <TextView
+                    android:id="@+id/txt_btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="button"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">>
+
+                <ImageButton
+                    android:id="@+id/btn3"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_background"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_mood_bad_black_24dp" />
+
+                <TextView
+                    android:id="@+id/txt_btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="button"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"></View>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EA80FC"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fragment_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment_7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
